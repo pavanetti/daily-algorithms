@@ -1,0 +1,25 @@
+name:                string-rotation
+version:             0.1.0.0
+# author:              "Carlos Pavanetti"
+# maintainer:          "12738516+pavanetti@users.noreply.github.com"
+# copyright:           "2022 Carlos Pavanetti"
+
+extra-source-files:
+- readme.md
+
+description:         Please see the README on GitHub at <https://github.com/pavanetti/daily-algos/20211231-string-rotation/#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- text
+- HUnit
+
+tests:
+  string-rotation-test:
+    main:                StringRotationTest.hs
+    source-dirs:         .
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -Wall
